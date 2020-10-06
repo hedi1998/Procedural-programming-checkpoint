@@ -1,0 +1,16 @@
+ALGORITHM vectors 
+VAR
+    u  : ARRAY_OF integer[3,-1,2];
+    v  : ARRAY_OF integer[1,3,1];
+    i ,a : integer;
+BEGIN
+    read(u);
+    read(v);
+    for i=0 to 10 do 
+    BEGIN
+    a= u[0]*v[0] + u[1]*v[1] + u[2]*v[2] ;
+    if a=0 do 
+    write ('vectors are orthogonal')
+   else 
+   write ('vectors are not orthogonal')
+END
